@@ -43,7 +43,7 @@ curl --location --request POST https://api.melroselabs.com/restsmpp/sms/ \
 }
 ```
 
-## esponse
+## Response
 
 Successful (with missing message IDs where rejected):
 <pre>
