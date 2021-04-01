@@ -19,7 +19,8 @@ curl --location --request POST https://api.melroselabs.com/restsmpp/sms/ \
 
 ## JSON Request
 
-```{
+```
+{
   "smpp_account_config": {
     "host": "HOST",
     "port": 2775,
