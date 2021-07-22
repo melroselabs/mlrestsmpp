@@ -58,6 +58,14 @@ def submitsmresp_handler(pdu,**kwargs):
 
 def lambda_handler(event, context):
 
+    global messageIDdict,resultCount,result_available
+
+    messageIDdict = {}
+    resultCount = 0
+    result_available.clear()
+
+    print(event)
+
     body_str = event['body']
     if event['isBase64Encoded']:
         body_str = base64.b64decode(body_str)
