@@ -12,7 +12,7 @@ API Gateway calls lambda function lambda_function.py to process REST call JSON p
 ## REST API Usage
 
 ```
-curl --location --request POST https://api.melroselabs.com/restsmpp/sms/ \
+curl https://api.melroselabs.com/restsmpp/sms/ \
 	--header 'Content-Type: application/json' \
 	--data-raw '{"smpp_account_config":{"host":"HOST","port":2775,"system_id":"SYSTEMID","password":"PASSWORD"},"message":{"source_addr":"MelroseLabs","short_message":{"text":"Melrose Labs engineer great communication services."}},"destinations":["447892000000","44","447892000002","44","44","447892000003"]}'
 ```
